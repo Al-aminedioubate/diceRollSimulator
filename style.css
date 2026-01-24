@@ -10,8 +10,9 @@ body{
 }
 
 #diceImg{
-    width: 200px;
-    padding-left: 100px;
+    width: 100px;
+    padding-left: 90px;
+    font-size: 80px;
 }
 
 /*Section buton*/
@@ -20,7 +21,8 @@ button{
     height: 40px;
     border-radius: 10px;
     border-style: none;
-    background-color: rgb(240, 86, 171);
+    background-color: #DA0037;
+    color: white;
     font-size: 20px;
     font-style: monospace;
 }
