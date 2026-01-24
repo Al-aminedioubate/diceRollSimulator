@@ -9,8 +9,8 @@ body{
     gap: 20px;
 }
 
-img{
-    width: 100px;
+#diceImg{
+    width: 200px;
     padding-left: 100px;
 }
 
