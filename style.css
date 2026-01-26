@@ -11,10 +11,10 @@ body{
 
 @keyframes spin {
     from{
-        transform: rotate(0deg);
+        transform: rotate(30deg);
     }
     to {
-        transform: rotate(60deg);
+        transform: rotate(0deg);
     }
 }
 
@@ -58,6 +58,8 @@ button{
    align-items: center;
    justify-content: space-between;
    font-style: monospace;
+   color:#DA0037;
+   font-weight: bold;
 }
 
 #itemsRolled li img{
