@@ -2,7 +2,7 @@
 body{
     margin: 0;
     display: flex;
-    height: 60vh;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -26,3 +26,27 @@ button{
     font-size: 20px;
     font-style: monospace;
 }
+
+/*Ul style section*/
+#itemsRolled{
+    list-style: none;
+}
+
+#itemsRolled li{
+   font-size: 20px;
+   box-shadow: 0 4px 18px rgb(0, 0, 0.15);
+   width: 100vh;
+   height: 50px;
+   padding: 20px;
+   margin: 20px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-style: monospace;
+}
+
+#itemsRolled li img{
+    width: 50px;
+}
+
