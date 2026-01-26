@@ -4,6 +4,7 @@ let diceImg = document.getElementById("diceImg");
 
 let roll = document.getElementById("itemsRolled");
 let diceValue;
+let history = [];
 
 //Fonction permettant les valeurs aleatoire de 1 a 6
 function rollDice() {
@@ -11,17 +12,16 @@ function rollDice() {
 
 	diceImg.src = `images/dice${diceValue}.png`;
 
-	/*let p = document.createElement("p");
-	p.textContent = "Roll:";*/
-
 	let li = document.createElement("li");
-	li.textContent = "Roll:";
+
+	//creons un tableau ici pour garder l'historique de nos lancer pour connaitre la position de lancer de chaque dé
+	history.push(diceValue);
+	history.forEach((value, index) => {
+		li.textContent = `Roll : ${index + 1}`;
+	});
 
 	const img = document.createElement("img");
 	img.src = `images/dice${diceValue}.png`;
-
-	/*let p = document.createElement("p");
-	p.textContent = `images/dice${diceValue}.png`;*/
 
 	li.appendChild(img);
 	roll.appendChild(li);
