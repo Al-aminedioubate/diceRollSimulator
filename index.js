@@ -20,10 +20,14 @@ function rollDice() {
 		li.textContent = `Roll : ${index + 1}`;
 	});
 
+	//creons et recuperons l'image de dé tirer pour pouvoir l'ajouter sur la liste d'affichage.
 	const img = document.createElement("img");
 	img.src = `images/dice${diceValue}.png`;
 
+	//ajoutons a l'element li notre img
 	li.appendChild(img);
+
+	//ajoutons a notre element principale notre li contenant la position du dé lancer et son image.
 	roll.appendChild(li);
 }
 
