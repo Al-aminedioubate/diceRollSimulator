@@ -8,7 +8,6 @@ let history = [];
 
 //Fonction permettant les valeurs aleatoire de 1 a 6
 function rollDice() {
-	//creons un peu d'effet sur notre roll
 	diceValue = Math.floor(Math.random() * 6) + 1;
 
 	diceImg.src = `images/dice${diceValue}.png`;

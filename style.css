@@ -22,10 +22,11 @@ body{
     animation-name: spin;
     animation-duration: 1s;
     animation-timing-function: linear;
+    animation-iteration-count: 2;
 
     width: 100px;
     padding-left: 90px;
-    font-size: 80px;
+    font-size: 70px;
 }
 
 /*Section buton*/
