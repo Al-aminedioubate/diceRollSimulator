@@ -9,34 +9,27 @@ let history = [];
 //Fonction permettant les valeurs aleatoire de 1 a 6
 function rollDice() {
 	//creons un peu d'effet sur notre roll
-	let rollCount = 0;
-	const rollInterval = setInterval(() => {
-		diceValue = Math.floor(Math.random() * 6) + 1;
+	diceValue = Math.floor(Math.random() * 6) + 1;
 
-		diceImg.src = `images/dice${diceValue}.png`;
+	diceImg.src = `images/dice${diceValue}.png`;
 
-		let li = document.createElement("li");
+	let li = document.createElement("li");
 
-		//creons un tableau ici pour garder l'historique de nos lancer pour connaitre la position de lancer de chaque dé
-		history.push(diceValue);
-		history.forEach((value, index) => {
-			li.textContent = `Roll : ${index + 1}`;
-		});
+	//creons un tableau ici pour garder l'historique de nos lancer pour connaitre la position de lancer de chaque dé
+	history.push(diceValue);
+	history.forEach((value, index) => {
+		li.textContent = `Roll : ${index + 1}`;
+	});
 
-		//creons et recuperons l'image de dé tirer pour pouvoir l'ajouter sur la liste d'affichage.
-		const img = document.createElement("img");
-		img.src = `images/dice${diceValue}.png`;
+	//creons et recuperons l'image de dé tirer pour pouvoir l'ajouter sur la liste d'affichage.
+	const img = document.createElement("img");
+	img.src = `images/dice${diceValue}.png`;
 
-		//ajoutons a l'element li notre img
-		li.appendChild(img);
+	//ajoutons a l'element li notre img
+	li.appendChild(img);
 
-		//ajoutons a notre element principale notre li contenant la position du dé lancer et son image.
-		roll.appendChild(li);
-
-		// rotation
-		diceImg.style.transform = `rotate(${rollCount * 60}deg)`;
-		rollCount++;
-	}, 80);
+	//ajoutons a notre element principale notre li contenant la position du dé lancer et son image.
+	roll.appendChild(li);
 }
 
 //Creons notre evenement
