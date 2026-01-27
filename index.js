@@ -6,7 +6,6 @@ let roll = document.getElementById("itemsRolled");
 
 let diceValue;
 let history = [];
-rotation = document.getElementById("dice");
 
 //Fonction permettant les valeurs aleatoire de 1 a 6
 function rollDice() {
@@ -35,9 +34,9 @@ function rollDice() {
 
 //Creons notre evenement
 btnDice.addEventListener("click", () => {
-	rotation.classList.add("roll-animation");
+	/*rotation.classList.add("roll-animation");
 	setTimeout(() => {
 		rotation.classList.remove("roll-animation");
-		rollDice();
-	}, 1000);
+        }, 1000);*/
+	rollDice();
 });

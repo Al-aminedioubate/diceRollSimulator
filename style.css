@@ -10,7 +10,7 @@ body{
 }
 
 @keyframes spin {
-    0%{
+    0% {
         transform: rotateY(0deg) rotateX(0deg);
     }
     100% {
@@ -19,11 +19,11 @@ body{
 }
 
 .roll-animation{
-   animation-name: spin;
+   animation: spin;
 }
 
 .dice{
- animation-name: spin;
+  transform: rotateY(60deg);
 }
 
 #diceImg{
