@@ -3,6 +3,7 @@ let btnDice = document.getElementById("diceBtn");
 let diceImg = document.getElementById("diceImg");
 
 let roll = document.getElementById("itemsRolled");
+
 let diceValue;
 let history = [];
 
@@ -33,9 +34,5 @@ function rollDice() {
 
 //Creons notre evenement
 btnDice.addEventListener("click", () => {
-	diceImg.classList.add("roll-animation");
-	setTimeout(() => {
-		diceImg.classList.remove("roll-animation");
-		rollDice();
-	}, 10);
+	rollDice();
 });
