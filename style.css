@@ -20,7 +20,10 @@ body{
 
 .roll-animation{
    animation-name: spin;
-   transition: transform 0.5s ease-in-out; 
+}
+
+.dice{
+ animation-name: spin;
 }
 
 #diceImg{
