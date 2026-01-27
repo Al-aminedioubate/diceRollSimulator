@@ -2,7 +2,7 @@
 let btnDice = document.getElementById("diceBtn");
 let diceImg = document.getElementById("diceImg");
 
-let roll = document.getElementById("itemsRolled");
+let roll = document.getElementById("historyItems");
 
 let diceValue;
 let history = [];
@@ -34,9 +34,9 @@ function rollDice() {
 
 //Creons notre evenement
 btnDice.addEventListener("click", () => {
-	/*rotation.classList.add("roll-animation");
+	diceImg.classList.add("diceRoll");
 	setTimeout(() => {
-		rotation.classList.remove("roll-animation");
-        }, 1000);*/
-	rollDice();
+		diceImg.classList.remove("diceRoll");
+		rollDice();
+	}, 1000);
 });
