@@ -32,4 +32,10 @@ function rollDice() {
 }
 
 //Creons notre evenement
-btnDice.addEventListener("click", rollDice);
+btnDice.addEventListener("click", () => {
+	diceImg.classList.add("roll-animation");
+	setTimeout(() => {
+		diceImg.classList.remove("roll-animation");
+		rollDice();
+	}, 10);
+});
