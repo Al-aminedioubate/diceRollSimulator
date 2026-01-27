@@ -35,7 +35,7 @@ function rollDice() {
 	roll.appendChild(li);
 }
 
-//Creons notre evenement
+//Creons notre evenement sur le bouton et l'effet sur les dés lors du lancé
 btnDice.addEventListener("click", () => {
 	//on ajoute ici un temps et style d'effet a notre dé a chaque fois qu'on lance
 	diceImg.classList.add("diceRoll");

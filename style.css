@@ -46,6 +46,7 @@ button{
     font-size: 17px;
     font-family: monospace;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*Ul style section*/
@@ -64,7 +65,7 @@ button{
    display: flex;
    align-items: center;
    justify-content: space-between;
-    font-family: monospace;
+   font-family: monospace;
    color:#DA0037;
    font-weight: bold;
 }
