@@ -4,6 +4,9 @@ let diceImg = document.getElementById("diceImg");
 
 let roll = document.getElementById("historyItems");
 
+//ajoutons un son au lancer de notre dé
+let monSon = new Audio("déSon.mp3");
+
 let diceValue;
 let history = [];
 
@@ -34,10 +37,12 @@ function rollDice() {
 
 //Creons notre evenement
 btnDice.addEventListener("click", () => {
-    //on ajoute ici un temps et style d'effet a notre dé a chaque fois qu'on lance
+	//on ajoute ici un temps et style d'effet a notre dé a chaque fois qu'on lance
 	diceImg.classList.add("diceRoll");
 	setTimeout(() => {
 		diceImg.classList.remove("diceRoll");
+		monSon.currentTime = 0;
+		monSon.play();
 		rollDice();
 	}, 1000);
 });

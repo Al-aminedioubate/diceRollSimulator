@@ -1,6 +1,6 @@
 /*Body style section*/
 body{
-    margin: 0;
+    margin: 50px;
     display: flex;
     height: fit-content;
     align-items: center;
