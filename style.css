@@ -8,7 +8,13 @@ body{
     flex-direction: column;
     gap: 20px;
 }
-
+/*titre style*/
+h1{
+    color: #DA0037;
+    font-family: monospace;
+    font-weight: bold;
+}
+/*Effet de rotation style section*/
 @keyframes roll {
   0% {
     transform: rotateY(0deg) rotateX(0deg);
@@ -22,6 +28,7 @@ body{
   animation: roll 1s ease-in-out;
 }
 
+/*Image style section*/
 #diceImg{
     width: 100px;
     padding-left: 90px;
@@ -36,8 +43,9 @@ button{
     border-style: none;
     background-color: #DA0037;
     color: white;
-    font-size: 20px;
-    font-style: monospace;
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 /*Ul style section*/
@@ -48,7 +56,7 @@ button{
 #historyItems li{
    font-size: 20px;
    box-shadow: 0 2px 8px rgb(0, 0, 0.15);
-   width: 100vh;
+   width: 50vh;
    height: 50px;
    padding: 20px;
    margin: 8px;
@@ -56,7 +64,7 @@ button{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   font-style: monospace;
+    font-family: monospace;
    color:#DA0037;
    font-weight: bold;
 }

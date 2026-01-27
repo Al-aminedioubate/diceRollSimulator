@@ -18,7 +18,7 @@ function rollDice() {
 	//creons un tableau ici pour garder l'historique de nos lancer pour connaitre la position de lancer de chaque dé
 	history.push(diceValue);
 	history.forEach((value, index) => {
-		li.textContent = `Roll ${index + 1} :`;
+		li.textContent = `Roll ${index + 1}:`;
 	});
 
 	//creons et recuperons l'image de dé tirer pour pouvoir l'ajouter sur la liste d'affichage.
@@ -34,6 +34,7 @@ function rollDice() {
 
 //Creons notre evenement
 btnDice.addEventListener("click", () => {
+    //on ajoute ici un temps et style d'effet a notre dé a chaque fois qu'on lance
 	diceImg.classList.add("diceRoll");
 	setTimeout(() => {
 		diceImg.classList.remove("diceRoll");
