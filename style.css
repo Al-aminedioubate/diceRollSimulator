@@ -76,7 +76,6 @@ button:hover{
 
 #historyItems li:hover{
     cursor: pointer;
-    transform: scale(1.1);
 }
 
 #historyItems li img{
