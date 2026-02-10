@@ -10,8 +10,9 @@ let monSon = new Audio("déSon.mp3");
 let diceValue;
 let history = [];
 
-//Fonction permettant generer les valeurs aleatoire de 1 a 6
+//Fonction Traitement du dé
 function rollDice() {
+	//Generation des valeurs aleatoire de 1 a 6
 	diceValue = Math.floor(Math.random() * 6) + 1;
 
 	diceImg.src = `images/dice${diceValue}.png`;
